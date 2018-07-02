@@ -1,0 +1,1442 @@
+: 1523993284:0;pacman -Q | grep input
+: 1523993573:0;pacman -Q | grep xf86
+: 1523993908:0;sudo pacman -Syu firefox-developer-edition
+: 1523994061:0;gnupg
+: 1523994078:0;sudo pacman -Syu firefox-developer-edition
+: 1523994192:0;echo $SHELL
+: 1523994268:0;sudo pacman -Syu sddm-kcm
+: 1523994645:0;sudo pacman -Syu mesa
+: 1523994660:0;sudo pacman -Syu lib32-mesa vulkan-intel
+: 1523995016:0;sudo -Syu powertop 
+: 1523995021:0;sudo pacman -Syu powertop 
+: 1523995036:0;sudo powertop --calibrate
+: 1523995518:0;sudo pacman -Syu tlp
+: 1523995740:0;sudo $EDITOR /etc/systemd/system/powertop.service
+: 1523995759:0;sudo pacman -Syu sublime-text
+: 1523995795:0;sudo pacman -Syu sublime-textcurl -O https://download.sublimetext.com/sublimehq-pub.gpg && sudo pacman-key --add sublimehq-pub.gpg && sudo pacman-key --lsign-key 8A8F901A && rm sublimehq-pub.gpg
+: 1523995798:0;curl -O https://download.sublimetext.com/sublimehq-pub.gpg && sudo pacman-key --add sublimehq-pub.gpg && sudo pacman-key --lsign-key 8A8F901A && rm sublimehq-pub.gpg
+: 1523995804:0;echo -e "\n[sublime-text]\nServer = https://download.sublimetext.com/arch/stable/x86_64" | sudo tee -a /etc/pacman.conf
+: 1523995812:0;sudo pacman -Syu sublime-text
+: 1523995839:0;sudo subl /etc/systemd/system/powertop.service
+: 1523995858:0;sudo systemctl enable powertop
+: 1523995871:0;sudo pacman -S tlp
+: 1523995906:0;sudo subl /etc/default/tlp
+: 1523995956:0;sudo systemctl enable tlp.service  
+: 1523995964:0;sudo systemctl enable tlp-sleep.service
+: 1523996025:0;pacman -Q | grep power
+: 1523996527:0;sudo pacman -Syu intel-ucode
+: 1523996554:0;pacman -Q | grep alsa
+: 1523996585:0;sudo pacman -Syu thermald
+: 1523996606:0;systemctl enable thermald
+: 1523996619:0;systemctl enable thermald.service
+: 1523996631:0;systemctl start thermald.service
+: 1523996657:0;pacman -Q | grep alsa
+: 1523997083:0;sudo pacman -Syu termite
+: 1523997174:0;sudo pacman -Syu termite tmux
+: 1523997213:0;xinput --list --short
+: 1523997387:0;sudo subl /etc/X11/xorg.conf.d
+: 1523997410:0;cd /etc/X11/xorg.conf.d
+: 1523997414:0;touch 50-synaptics.conf
+: 1523997416:0;sudo touch 50-synaptics.conf
+: 1523997422:0;sudo subl 50-synaptics.conf
+: 1523997533:0;subl ~/.zshrc
+: 1523997702:0;cd ~/
+: 1523997710:0;git clone                                       
+: 1523997717:0;sudo pacman -Syu git
+: 1523997758:0;git clone https://aur.archlinux.org/zsh-autosuggestions.git
+: 1523997761:0;cd zsh-autosuggestions
+: 1523997763:0;makepkg -sic
+: 1523997883:0;pacman -S cmake freetype2 fontconfig pkg-config make xclip
+: 1523997885:0;sudo pacman -S cmake freetype2 fontconfig pkg-config make xclip
+: 1523997931:0;cargo build --release
+: 1523998907:0;vim /etc/default/tlp
+: 1523998928:0;sudo vim /etc/default/tlp
+: 1523998971:0;sudo systemctl disable tlp-sleep.service
+: 1523998977:0;sudo systemctl disable tlp.service
+: 1523998984:0;shutdown -r now
+: 1523999811:0;sudo systemctl enable tlp.service
+: 1523999835:0;sudo systemctl enable tlp-sleep.service
+: 1523999844:0;sudo systemctl enable poweroff.target
+: 1523999851:0;sudo systemctl disable poweroff.target
+: 1523999860:0;sudo systemctl enable powertop
+: 1523999873:0;sudo pacman -Syu powerdevil
+: 1524000107:0;cd /etc/X11
+: 1524000108:0;ls
+: 1524000118:0;mkdir mhwd.d
+: 1524000129:0;sudo mkdir mhwd.d
+: 1524000131:0;cd mhwd.d
+: 1524000139:0;sudo touch intel.conf
+: 1524000143:0;sudo subl intel.conf
+: 1524000183:0;pacman -Q | grep input
+: 1524000280:0;cd /etc/X11/xorg.conf.d
+: 1524000280:0;ls
+: 1524000290:0;touch 70-synaptics.conf
+: 1524000293:0;sudo touch 70-synaptics.conf
+: 1524000313:0;sudo subl 70-synaptics.conf
+: 1524000497:0;cd /etc/X11/xorg.conf.d
+: 1524000498:0;sudo subl 70-synaptics.conf
+: 1524000914:0;grep xorg
+: 1524000920:0;locate synaptics | grep xorg
+: 1524000965:0;synclient VertScrollDelta 30
+: 1524000973:0;synclient "VertScrollDelta" "30"
+: 1524000997:0;synclient -l
+: 1524001029:0;synclient VertScrollDelta=-5
+: 1524001036:0;synclient VertScrollDelta=-50
+: 1524001045:0;synclient VertScrollDelta=-70
+: 1524001050:0;synclient VertScrollDelta=-60
+: 1524001063:0;tmux
+: 1524001122:0;tmux new-session work
+: 1524001128:0;tmux new-session work -t work
+: 1524001134:0;tmux
+: 1524001176:0;sudo subl /etc/X11/xorg.conf.d/70-synaptics.conf
+: 1524001191:0;synclient -l
+: 1524001239:0;synclient HorizScrollDelta=60
+: 1524001327:0;xinput --list
+: 1524001516:0;cd /usr/share/X11/xorg.conf.d
+: 1524001516:0;ls
+: 1524001521:0;cat 40-libinput.conf
+: 1524001529:0;cat 70-synaptics.conf
+: 1524001534:0;subl 70-synaptics.conf
+: 1524001561:0;sudo subl /etc/X11/xorg.conf.d/70-synaptics.conf
+: 1524001795:0;sudo systemctl restart sddm.service
+: 1524001822:0;sudo subl /etc/X11/xorg.conf.d/70-synaptics.conf
+: 1524001988:0;sudo systemctl restart sddm.service
+: 1524002087:0;pacman -R xf86-input-libinput
+: 1524002089:0;sudo pacman -R xf86-input-libinput
+: 1524002138:0;sudo pacman -Rdd xf86-input-libinput
+: 1524002166:0;sudo pacman -Syu xf86-input-libinput
+: 1524002326:0;sudo pacman -Rdd xf86-input-libinput
+: 1524003309:0;sudo subl /etc/X11/xorg.conf.d/70-synaptics.conf
+: 1524003482:0;synclient VertScrollDelta=-60
+: 1524003533:0;cd Downloads
+: 1524003533:0;ls
+: 1524003536:0;rm sublime_text_3_build_3143_x64.tar.bz2
+: 1524003540:0;git clone git clone https://aur.archlinux.org/alacritty-git.git
+: 1524003548:0;git clone https://aur.archlinux.org/alacritty-git.git
+: 1524003551:0;cd alacritty-git
+: 1524003558:0;makepkg -sic
+: 1524004077:0;cd ..
+: 1524004083:0;pacman -Qm
+: 1524004086:0;pacman -Q | grep rust
+: 1524004096:0;git clone https://aur.archlinux.org/kitty.git
+: 1524004099:0;cd kitty
+: 1524004101:0;makepkg -sic
+: 1524004149:0;cd ..
+: 1524004154:0;rm -rf alacritty-git kitty
+: 1524004167:0;sudo mv /usr/bin/ksplashqml /usr/bin/ksplashqml.old
+: 1524004184:0;sudo pacman -Syu i3-gaps
+: 1524004225:0;exec --no-startup-id wmctrl -c Plasma
+: 1524004248:0;subl ~/.config/i3
+: 1524004294:0;kitty
+: 1524004317:0;firefox-developer-edition
+: 1524004328:0;cd .config/i3
+: 1524004331:0;subl config
+: 1524004497:0;cd .config/plasma-workspace/env
+: 1524004497:0;ls
+: 1524004504:0;touch wm.sh
+: 1524004506:0;subl wm.sh
+: 1524004580:0;cd ../../i3/
+: 1524004581:0;ls
+: 1524004584:0;subl config
+: 1524004620:0;cd /usr/bin
+: 1524004622:0;ls
+: 1524004645:0;find -n ksplas
+: 1524004649:0;find ksplas
+: 1524004655:0;find ./ ksplas
+: 1524004666:0;ls | grep ksplas
+: 1524004677:0;sudo pacman -Syu feh
+: 1524004724:0;synclient VertScrollDelta=-60
+: 1524004833:0;tmux
+: 1524004836:0;cd ~/Downloads
+: 1524004839:0;git clone https://aur.archlinux.org/plasma5-applet-awesome-widgets.git
+: 1524004841:0;cd plasma5-applet-awesome-widgets
+: 1524004843:0;makepkg -sic
+: 1524005221:0;echo "export KDEWM=/usr/bin/i3" > ~/.config/plasma-workspace/env/set_window_manager.sh\
+
+: 1524005243:0;cd ..
+: 1524005245:0;git clone https://github.com/nightsh/i3-plasma.git $HOME/.i3-plasma
+: 1524005260:0;ls
+: 1524005292:0;cd ~/.i3-plasma
+: 1524005292:0;ls
+: 1524005350:0;cd ..
+: 1524005354:0;rm .i3-plasma
+: 1524005360:0;rm -r .i3-plasma
+: 1524005364:0;rmdir .i3-plasma
+: 1524005367:0;rmdir -f .i3-plasma
+: 1524005371:0;sudo rmdir -f .i3-plasma
+: 1524005382:0;sudo rm -rf .i3-plasma
+: 1524005386:0;cd i3
+: 1524005387:0;ls
+: 1524005392:0;cd .config/i3
+: 1524005393:0;ls
+: 1524005395:0;subl config
+: 1524005524:0;sudo pacman -Syu feh nitrogen
+: 1524005706:0;subl ~/.xinitrc
+: 1524005984:0;cd .config/i3
+: 1524005988:0;subl ~/.xinitrc
+: 1524006067:0;sudo mv /usr/bin/ksplashqml.old /usr/bin/ksplashqml
+: 1524006088:0;cd ~/.config/plasma-workspace/env/\
+
+: 1524006089:0;ls
+: 1524006096:0;rm set_window_manager.sh wm.sh
+: 1524006203:0;sudo pacman -R blueman
+: 1524006350:0;sudo pacman -S kdecoration qt5-declarative qt5-x11extras
+: 1524006364:0;sudo pacman -S cmake extra-cmake-modules
+: 1524006392:0;cd ~/Downloads
+: 1524006395:0;git clone https://aur.archlinux.org/sierrabreeze-kwin-decoration-git.git
+: 1524006396:0;cd sierrabreeze-kwin-decoration-git
+: 1524006399:0;makepkg -sic
+: 1524006468:0;cd ..
+: 1524006469:0;sudo pacman -S adapta-kde kvantum-theme-adapta
+: 1524006474:0;ls
+: 1524006478:0;rm -rf plasma5-applet-awesome-widgets sierrabreeze-kwin-decoration-git
+: 1524006510:0;sudo pacman -R nitrogen
+: 1524006844:0;cd Downloads
+: 1524006849:0;git clone https://aur.archlinux.org/materia-kde-git.git
+: 1524006852:0;cd materia-kde-git
+: 1524006856:0;makepkg -sic
+: 1524007840:0;synclient VertScrollDelta=-60
+: 1524007979:0;neofetch
+: 1524007982:0;screenfetch
+: 1524008428:0;cd Downloads
+: 1524008429:0;ls
+: 1524008432:0;git clone la-capitaine-icon-theme-git 
+: 1524008442:0;sudo pacman -Syu pacaur
+: 1524008454:0;sudo pacman -Syu yaourt
+: 1524008627:0;git clone https://aur.archlinux.org/la-capitaine-icon-theme.git
+: 1524008630:0;cd la-capitaine-icon-theme
+: 1524008632:0;makepkg -sic
+: 1524008733:0;sudo subl /etc/pacman.conf
+: 1524008754:0;sudo pacman -Syyu
+: 1524008762:0;sudo pacman -Syyu xenlism-wildfire
+: 1524008884:0;sudo pacman -Syu dropbox
+: 1524008891:0;cd ..
+: 1524008891:0;ls
+: 1524008897:0;rm -rf la-capitaine-icon-theme materia-kde-git
+: 1524008945:0;cd Downloads
+: 1524008947:0;git clone https://aur.archlinux.org/dropbox.git
+: 1524008950:0;cd dropbox
+: 1524008952:0;makepkg-sic
+: 1524008955:0;makepkg -sic
+: 1524009576:0;CD ..
+: 1524009578:0;cd ..
+: 1524009579:0;ls
+: 1524009581:0;rm dropbox
+: 1524009584:0;rm -rf dropbox
+: 1524009701:0;pacman -Q | grep gtk
+: 1524010986:0;sudo pacman -R kvantum-
+: 1524011001:0;sudo pacman -R kvantum-qt5 kvantum-theme-adapta
+: 1524011061:0;pacman -Qm
+: 1524011072:0;pacman -Q | grep icon
+: 1524011146:0;pacman -Qm
+: 1524011168:0;sudo pacman -R plasma5-applet-awesome-widgets materia-kde-git la-capitaine-icon-theme
+: 1524011223:0;ls
+: 1524011229:0;cd zsh-autosuggestions
+: 1524011230:0;ls
+: 1524011232:0;cd ..
+: 1524011235:0;rm -rf zsh-autosuggestions
+: 1524011237:0;ls
+: 1524035999:0;cd Downloads
+: 1524035999:0;ls
+: 1524036011:0;git clone https://github.com/rliang/kwin-dynamic-virtual-desktops ~/.local/share/kwin/scripts/dynamicVirtualDesktops\
+mkdir -p ~/.local/share/kservices5
+: 1524036023:0;ln -s ~/.local/share/{kwin/scripts/dynamicVirtualDesktops/metadata,kservices5/kwin-script-dynamicVirtualDesktops}.desktop\
+qdbus org.kde.KWin /KWin reconfigure
+: 1524036036:0;git clone https://github.com/Jazqa/kwin-quarter-tiling.git\
+plasmapkg2 --type kwinscript -i kwin-quarter-tiling
+: 1524036042:0;mkdir -p ~/.local/share/kservices5\
+ln -sf ~/.local/share/kwin/scripts/quarter-tiling/metadata.desktop ~/.local/share/kservices5/kwin-script-quarter-tiling.desktop
+: 1524036977:0;subl /etc/X11/xorg.conf.d/70-synaptics.conf
+: 1524037022:0;sudo systemctl restart sddm.service
+: 1524037237:0;neofe
+: 1524037240:0;neofetch
+: 1524037244:0;screen
+: 1524037248:0;screenfetch
+: 1524037297:0;cd Downloads
+: 1524037298:0;ls
+: 1524037301:0;cd kwin-quarter-tiling
+: 1524037301:0;ls
+: 1524037303:0;cd .
+: 1524037319:0;cd ..
+: 1524037322:0;rm -rf kwin-quarter-tiling
+: 1524037508:0;plasmapkg2 --type kwinscript -r kwin-quarter-tiling
+: 1524037524:0;plasmapkg2 --type kwinscript -r .local/share/kwin/scripts/quarter-tiling
+: 1524037553:0;cd Downloads
+: 1524037555:0;git clone https://github.com/Jazqa/kwin-quarter-tiling.git\
+plasmapkg2 --type kwinscript -i kwin-quarter-tiling
+: 1524037561:0;mkdir -p ~/.local/share/kservices5\
+ln -sf ~/.local/share/kwin/scripts/quarter-tiling/metadata.desktop ~/.local/share/kservices5/kwin-script-quarter-tiling.desktop\
+
+: 1524037654:0;xev
+: 1524038836:0;echo $DISPLAY
+: 1524038898:0;cd .config/kitty/
+: 1524038899:0;ls
+: 1524038904:0;touch kitty.conf
+: 1524038906:0;subl kitty.conf
+: 1524039543:0;sudo systemctl restart sddm.service
+: 1524040649:0;cd Downloads
+: 1524040650:0;ls
+: 1524040654:0;rm -rf kwin-quarter-tiling
+: 1524040669:0;git clone https://aur.archlinux.org/visual-studio-code-bin.git
+: 1524040671:0;cd visual-studio-code-bin
+: 1524040673:0;makepkg -sic
+: 1524040861:0;emacs
+: 1524040862:0;vim
+: 1524051477:0;powerdevil
+: 1524051482:0;sudo pacman -Syu powerdevil
+: 1524051697:0;zsh
+: 1524051700:0;bash
+: 1524051725:0;shutdown -r now
+: 1524052199:0;ranger
+: 1524052209:0;subl .zshrc
+: 1524052273:0;tmux
+: 1524052275:0;q
+: 1524052281:0;quit
+: 1524052289:0;ranger
+: 1524052307:0;sudo pacman -Syu chromium
+: 1524052354:0;sudo pacman -Syu okular
+: 1524052733:0;cd ~/Downloads
+: 1524052734:0;ls
+: 1524052739:0;git clone https://aur.archlinux.org/command-not-found.git
+: 1524052743:0;cd command-not-found
+: 1524052753:0;makepkg -sic
+: 1524052947:0;npm -v
+: 1524052956:0;sudo pacman -Syu nodejs
+: 1524053020:0;ranger
+: 1524053141:0;cd Downloads
+: 1524053145:0;cd command-not-found
+: 1524053180:0;ls
+: 1524053182:0;cd Downloads
+: 1524053182:0;ls
+: 1524053185:0;cd command-not-found
+: 1524053241:0;sudo npm i -g yarn
+: 1524053248:0;sudo pacman -Syu npm
+: 1524053258:0;sudo pacman -Syu yarn
+: 1524055379:0;ranger
+: 1524055386:0;cd Downloads
+: 1524055386:0;ls
+: 1524055389:0;cd command-not-found
+: 1524055391:0;makepkg -sic
+: 1524055396:0;cd ..
+: 1524055397:0;ls
+: 1524055400:0;rm -rf command-not-found visual-studio-code-bin
+: 1524055804:0;sudo pacman -Syu qbittorrent
+: 1524055878:0;cd Downloads
+: 1524055879:0;ls
+: 1524055881:0;git clone https://aur.archlinux.org/skypeforlinux-stable-bin.git
+: 1524055897:0;git clone https://aur.archlinux.org/slack-desktop.git
+: 1524055951:0;git clone https://aur.archlinux.org/trello.git
+: 1524055993:0;git clone https://aur.archlinux.org/postman.git
+: 1524056033:0;git clone https://aur.archlinux.org/gitkraken.git
+: 1524056106:0;git clone https://aur.archlinux.org/nerd-fonts-complete.git
+: 1524056128:0;git clone https://aur.archlinux.org/cava.git
+: 1524056138:0;git clone https://aur.archlinux.org/pacaur.git
+: 1524056202:0;sudo pacman -Syu  jre8-openjdk-headless jre8-openjdk jdk8-openjdk openjdk8-doc openjdk8-src  java-openjfx java-openjfx-doc java-openjfx-src
+: 1524056266:0;sudo pacman -Syu krita
+: 1524056336:0;sudo pacman -Syu thunderbird
+: 1524056393:0;git clone https://aur.archlinux.org/android-studio.git
+: 1524056475:0;ls
+: 1524056789:0;cd cava && makepkg -sic
+: 1524056811:0;ls
+: 1524056815:0;cd ..
+: 1524056820:0;rm -rf cava
+: 1524056821:0;ls
+: 1524056838:0;cd gitkraken && makepkg -sic && cd .. && rm -rf gitkraken
+: 1524058144:0;ls
+: 1524058157:0;cd postman && makepkg -sic && cd .. && rm -rf postman
+: 1524058213:0;sudo pacman -Syu ttf-opensans
+: 1524058249:0;git clone https://aur.archlinux.org/ttf-opensans.git
+: 1524058252:0;cd ttf-opensans
+: 1524058253:0;makepkg -sic
+: 1524058265:0;cd ..
+: 1524058266:0;git clone https://aur.archlinux.org/ttf-opensans.git
+: 1524058270:0;cd postman && makepkg -sic && cd .. && rm -rf postman
+: 1524058301:0;makepkg sic
+: 1524058311:0;ls
+: 1524058314:0;cd ..
+: 1524058314:0;ls
+: 1524058317:0;cd pacaur
+: 1524058319:0;makepkg -sic
+: 1524058325:0;cd ..
+: 1524058327:0;ls
+: 1524058329:0;cd skypeforlinux-stable-bin
+: 1524058331:0;makepkg -sic
+: 1524058414:0;cd Downloads
+: 1524058415:0;git clone https://aur.archlinux.org/packages/cower/
+: 1524058417:0;cd cow
+: 1524058422:0;cd cower
+: 1524058427:0;git clone https://aur.archlinux.org/packages/cower/
+: 1524058439:0;git clone https://aur.archlinux.org/cower.git
+: 1524058440:0;cd cower
+: 1524058443:0;makepkg -sicr
+: 1524058574:0;gpg --recv-keys --keyserver hkp://pgp.mit.edu 1EB2638FF56C0C53
+: 1524058633:0;sudo pacman -Syu gnupg
+: 1524058641:0;cd ..
+: 1524058641:0;ls
+: 1524058645:0;cd slack-desktop
+: 1524058647:0;makepkg -sic
+: 1524058668:0;gpg --recv-keys --keyserver hkp://pgp.mit.edu 1EB2638FF56C0C53
+: 1524058714:0;GNUPGHOME=/etc/pacman.d/gnupg makepkg -sic
+: 1524058719:0;cd ..
+: 1524058721:0;cd pacaur
+: 1524058723:0;makepkg -sic
+: 1524058730:0;cd ..
+: 1524058731:0;ls
+: 1524058742:0;rm -rf cower pacaur skypeforlinux-stable-bin slack-desktop
+: 1524058745:0;cd nerd-fonts-complete
+: 1524058749:0;makepkg -sic
+: 1524059052:0;cd ..
+: 1524059060:0;ls
+: 1524059062:0;cd trello
+: 1524059064:0;makepkg -sic
+: 1524059109:0;cd ..
+: 1524059110:0;ls
+: 1524059113:0;cd postman
+: 1524059114:0;makepkg -sic
+: 1524059152:0;cd Downloads && git clone https://aur.archlinux.org/slack-desktop.git && cd slack-desktop
+: 1524059154:0;ls
+: 1524059156:0;makepkg -sic
+: 1524059184:0;sudo pacman -R kitty
+: 1524059193:0;sudo pacman -Syu kitty
+: 1524059331:0;pacaur -S kitty
+: 1524059418:0;cd ..
+: 1524059418:0;ls
+: 1524059430:0;cd slac
+: 1524059436:0;cd slack-desktop
+: 1524059439:0;makepkg -sic
+: 1524059461:0;cd ..
+: 1524059461:0;ls
+: 1524059683:0;rm -rf nerd-fonts-complete postman slack-desktop trello
+: 1524059685:0;ls
+: 1524059686:0;cd android-studio
+: 1524059905:0;subl .zshrc
+: 1524060077:0;subl .zsh
+: 1524060083:0;subl .zshrc
+: 1524060104:0;ls
+: 1524060122:0;sudo pacman -Syu dolphin-plugins
+: 1524060476:0;systemctl restart sddm.service
+: 1524060696:0;ssh-keygen
+: 1524060704:0;ssh
+: 1524060740:0;ssh-keygen
+: 1524060746:0;sudo pacman -Syu ssh-keygen
+: 1524060816:0;sudo pacman -Syu openssh
+: 1524060840:0;ssh-keygen
+: 1524060849:0;cd .ssh
+: 1524060849:0;ls
+: 1524060857:0;subl id_rsa
+: 1524060864:0;subl id_rsa.pub
+: 1524061697:0;pacman -Qm
+: 1524061704:0;cd Downloads
+: 1524061705:0;ls
+: 1524061706:0;cd android-studio
+: 1524061708:0;makepkg -sic
+: 1524061756:0;infocmp xterm-kitty | ssh myserver tic -x -o \~/.terminfo /dev/stdin
+: 1524062042:0;echo %TERM
+: 1524062234:0;kitty
+: 1524062324:0;sudo subl /etc/locale.gen
+: 1524062404:0;sudo locale-gen
+: 1524062416:0;kitty
+: 1524062954:0;locale
+: 1524063460:0;subl
+: 1524087589:0;ls
+: 1524087593:0;mkdir Development
+: 1524087596:0;cd Development
+: 1524087596:0;ls
+: 1524087600:0;git clone suvash
+: 1524087617:0;git clone git@github.com:brajevicm/bit-react-workshop.git
+: 1524087640:0;git clone git@github.com:brajevicm/yelp-react.git
+: 1524087739:0;ls
+: 1524087776:0;cd Downloads
+: 1524087868:0;cd Development
+: 1524087868:0;ls
+: 1524087872:0;cd yelp-react
+: 1524087900:0;cd Development
+: 1524087901:0;ls
+: 1524087904:0;cd yelp-react
+: 1524087914:0;cd 
+: 1524087915:0;ls
+: 1524087984:0;cd Development
+: 1524087985:0;ls
+: 1524088032:0;pacman -Q | grep powerline
+: 1524088061:0;pacaur -S awesome-terminal-fonts-patched
+: 1524088159:0;ls
+: 1524088176:0;cdD
+: 1524088190:0;ls
+: 1524088244:0;sudo pacman -R termite konsole
+: 1524088264:0;cd Development
+: 1524088265:0;,s
+: 1524088349:0;h
+: 1524088359:0;h | grep dev
+: 1524088362:0;h | grep Dev
+: 1524088515:0;thermald
+: 1524088524:0;sudo thermald
+: 1524088550:0;sudo pacman -Syu tlp
+: 1524088994:0;cd Development
+: 1524089012:0;d 
+: 1524089015:0;cd Development
+: 1524089158:0;sudo tlp-stat 
+: 1524089180:0;sudo pacman -Syu acpi-call ethtool
+: 1524089198:0;sudo pacman -Syu acpi_call ethtool
+: 1524089216:0;_acpi
+: 1524089221:0;_acpitool
+: 1524089277:0;sudo pacman -Syu otf-overpass
+: 1524089352:0;cd Deve
+: 1524089355:0;cd Development
+: 1524089358:0;,s
+: 1524089369:0;ls
+: 1524089592:0;cd Development
+: 1524089592:0;ls
+: 1524089644:0;cd Development
+: 1524089653:0;cd Deve
+: 1524089657:0;cd Development/
+: 1524089659:0;ls
+: 1524089734:0;cd Development
+: 1524089841:0;$TERM
+: 1524089882:0;s udo update-alternatives --config x-terminal-emulator\
+
+: 1524089886:0;sudo update-alternatives --config x-terminal-emulator\
+
+: 1524090166:0;echo $TERM
+: 1524090204:0;kitty
+: 1524090234:0;cd Development
+: 1524090282:0;sudo pacman -Syu breeze-gtk
+: 1524090346:0;sudo pacman -S kde-gtk-config 
+: 1524090660:0;cd Development
+: 1524090662:0;ls
+: 1524090756:0;cd Development
+: 1524090762:0;ls
+: 1524090788:0;cd Android/ls
+: 1524090789:0;ls
+: 1524090962:0;neoefe
+: 1524090969:0;neofetc
+: 1524090970:0;neofetch
+: 1524090973:0;screenfetch
+: 1524090979:0;sudo pacman -Syu neofetch
+: 1524091000:0;neofetch
+: 1524091005:0;screenfetch
+: 1524091013:0;neofetch
+: 1524091015:0;screenfetch
+: 1524091299:0;locate plasma
+: 1524091322:0;vim
+: 1524091773:0;screenfetch
+: 1524091777:0;neofetch
+: 1524092096:0;ls
+: 1524092165:0;sudo pacman -R thunderbird
+: 1524092177:0;sudo pacman -S mailspring
+: 1524092184:0;pacaur -S mainspring
+: 1524092194:0;pacaur -S mailspring
+: 1524092288:0;cd Development
+: 1524092288:0;ls
+: 1524092293:0;cd ../Downloads
+: 1524092293:0;ls
+: 1524092298:0;rm -rf android-studio
+: 1524092878:0;pacaur -S papirus-icon-theme
+: 1524093599:0;cd Development/yelp-react
+: 1524093601:0;yarn 
+: 1524093631:0;yarn start
+: 1524094292:0;tlp
+: 1524094296:0;sudo tlp-stat
+: 1524094317:0;sudo pacman -Syu smartmontools
+: 1524094611:0;screenfetch
+: 1524094622:0;neofetch
+: 1524122190:0;subl .config/kitty/kitty.conf 
+: 1524122248:0;sudo pacman -Syu
+: 1524122307:0;pacman -Qdt
+: 1524122334:0;pacman -Qddt
+: 1524122342:0;pacman -Qqdt
+: 1524122352:0;pacman -Rs $(pacman -Qddt)
+: 1524122355:0;sudo pacman -Rs $(pacman -Qqdt)
+: 1524122392:0;cd Development/yelp-react
+: 1524122397:0;yarn start
+: 1524123276:0;sudo pacman -Syu howl
+: 1524123508:0;sudo pacman -R howl
+: 1524123516:0;pacman -Qdm
+: 1524123828:0;vim .config/kitty/kitty.conf
+: 1524124193:0;cd Development
+: 1524124197:0;ls
+: 1524124203:0;pacman -Qm
+: 1524124367:0;neofetch
+: 1524124371:0;screenfetch
+: 1524124952:0;subl .config/sublime-text-3/Local/Session.sublime_session
+: 1524124984:0;cd De
+: 1524124988:0;cd Development/yelp-react/ls
+: 1524124993:0;	cd Development/yelp-react
+: 1524124994:0;ls
+: 1524125022:0;subl .config/sublime-text-3/Local/Session.sublime_session
+: 1524125416:0;sudo tlp -stat
+: 1524125430:0;sudo tlp stat
+: 1524125513:0;kwin --replace
+: 1524125573:0;sudo pacman -Syu krunner
+: 1524125833:0;node "/home/brajevicm/Desktop/test.js"
+: 1524127218:0;yarn start
+: 1524128777:0;rmdir
+: 1524129382:0;yarn start
+: 1524132153:0;sudo pacman -Syu
+: 1524132989:0;yarn add moment
+: 1524133021:0;yarn start
+: 1524133162:0;cd Development/yelp-react
+: 1524133164:0;git b
+: 1524133166:0;git branch
+: 1524133174:0;git branch -a
+: 1524134472:0;cd Development/yelp-react
+: 1524134473:0;ls
+: 1524134475:0;git status
+: 1524134480:0;git add .
+: 1524134510:0;git commit -am "Changed project strucutre, added models, updated services."
+: 1524134512:0;git push
+: 1524136232:0;irb
+: 1524137378:0;screenfetch
+: 1524137395:0;pacaur -S bash-pipes
+: 1524137426:0;bash-pipes
+: 1524137482:0;pipes
+: 1524137485:0;cava
+: 1524137550:0;sudo pacman -S cmatrix
+: 1524137557:0;cmatrix
+: 1524137796:0;vim Development/yelp-react/package.json
+: 1524147061:0;sudo
+: 1524147070:0;cd ~
+: 1524147071:0;ls
+: 1524149281:0;git status
+: 1524149686:0;sudo tlp -start
+: 1524149692:0;sudo tlp -stat
+: 1524149695:0;sudo tlp stat
+: 1524151457:0;cd Development/yelp-react
+: 1524151458:0;ls
+: 1524151464:0;yarn add bootstrap-4-grid
+: 1524151562:0;yarn add bootstrap-loader --dev
+: 1524151666:0;yarn start
+: 1524151668:0;yarn
+: 1524151671:0;yarn start
+: 1524151808:0;yarn
+: 1524151875:0;yarn start
+: 1524152140:0;git status
+: 1524152142:0;git add .
+: 1524152263:0;git commit -am "More changes to project strcuture. Moved to css instead of sass."
+: 1524152266:0;git push
+: 1524152289:0;yarn start
+: 1524171277:0;cd Development/yelp-react
+: 1524171316:0;git status
+: 1524171363:0;git diff
+: 1524171374:0;git add .
+: 1524209200:0;yarn start
+: 1524223880:0;yarn
+: 1524223887:0;yarn start
+: 1524235400:0;git staus
+: 1524235403:0;git status
+: 1524235404:0;git add .
+: 1524235420:0;git commit -m "Started implementing services"
+: 1524235421:0;git push
+: 1524310857:0;node "/home/brajevicm/Desktop/test.js"
+: 1524406453:0;sudo pacman -Syu
+: 1524407555:0;needrestart
+: 1524407560:0;shutdown -r 
+: 1524408005:0;cd Development/yelp-react
+: 1524408021:0;neofetch
+: 1524408026:0;screenfetch
+: 1524468251:0;cd ..
+: 1524471381:0;git clone git@github.com:brajevicm/playground.git
+: 1524471386:0;cd playground
+: 1524471404:0;code -n .
+: 1524471425:0;php -v
+: 1524471428:0;ruby --v
+: 1524471435:0;pacman -Syu 
+: 1524471437:0;sudo pacman -Syu 
+: 1524471477:0;sudo pacman -Syu ruby php perl
+: 1524471499:0;python --v
+: 1524471501:0;python -v
+: 1524471512:0;sudo pacman -Syu python
+: 1524471546:0;sudo pacman -Rdd
+: 1524471550:0;sudo pacman -Rd
+: 1524471716:0;pacaur -Syu discord
+: 1524471885:0;screenfetch
+: 1524476957:0;pacaur -Syuu
+: 1524476990:0;gpg --recv-keys B6C8F98282B944E3B0D5C2530FC3042E345AD05D
+: 1524477000:0;pacaur -S libc++
+: 1524478922:0;pacaur -Syu discord
+: 1524479125:0;sudo  pacman -Rns $(pacman -Qtdq)\
+
+: 1524479549:0;yarn start
+: 1524554441:0;sudo pacaur -Syu
+: 1524554449:0;pacaur -Syu
+: 1524554774:0;sudo pacman -Syu php
+: 1524554919:0;pacman -Syu php-cs-fixer
+: 1524554930:0;pacaur -Sy php-cs-fixer
+: 1524554998:0;php "/home/brajevicm/Development/playground/php/logical.php"
+: 1524555008:0;cd php
+: 1524555010:0;php "/home/brajevicm/Development/playground/php/logical.php"
+: 1524555035:0;php "/home/brajevicm/Development/playground/php/tempCodeRunnerFile.php"
+: 1524555039:0;php "/home/brajevicm/Development/playground/php/logical.php"
+: 1524555084:0;sudo pacman -Syu composer
+: 1524555207:0;composer global require friendsofphp/php-cs-fixer
+: 1524555419:0;whereis php
+: 1524555452:0;echo $PATH
+: 1524555644:0;whereis php-cs-fixer
+: 1524555763:0;php-cs-fixe
+: 1524555764:0;php-cs-fixer
+: 1524555773:0;sudo pacman -Rdd composer
+: 1524555920:0;sudo pacman -Syu
+: 1524555929:0;composer global require friendsofphp/php-cs-fixer
+: 1524555947:0;php "/home/brajevicm/Development/playground/php/logical.php"
+: 1524555979:0;php
+: 1524555982:0;php -v
+: 1524555991:0;sudo pacman -Syu php
+: 1524556012:0;php "/home/brajevicm/Development/playground/php/logical.php"
+: 1524556356:0;sudo pacman -Rdd composer
+: 1524556366:0;pacaur -S php-cs-fixer
+: 1524556481:0;sudo pacman -Syu php
+: 1524556508:0;pacaur -S php-cs-fixer
+: 1524556574:0;sudo pacman -Syu tmux
+: 1524562263:0;php "/home/brajevicm/Development/playground/php/logical.php"
+: 1524562294:0;php "/home/brajevicm/Development/playground/php/tempCodeRunnerFile.php"
+: 1524562297:0;php "/home/brajevicm/Development/playground/php/logical.php"
+: 1524575193:0;sudo pacman -Rdd
+: 1524575200:0;sudo pacman -Syu
+: 1524575203:0;tmux
+: 1524575492:0;pacaur -S
+: 1524575495:0;pacaur -Syu
+: 1524578936:0;php "/home/brajevicm/Development/playground/php/logical.php"
+: 1524582069:0;php "/home/brajevicm/Development/playground/php/arrays.php"
+: 1524582402:0;php "/home/brajevicm/Development/playground/php/namespace.php"
+: 1524668614:0;sudo pacman -Syu
+: 1524668620:0;pacaur -Syu
+: 1524679745:0;sudo pacman -Syu
+: 1524680190:0;pacaur -S acestream-player
+: 1524690008:0;sudo pacman -Syu
+: 1524867245:0;pacaur -Syu
+: 1524867524:0;sudo pacman -Syu
+: 1524867542:0;neofetch
+: 1524867547:0;screenfetch
+: 1524933686:0;pacaur -Syu
+: 1524933951:0;cd Downloads
+: 1524933951:0;ls
+: 1524933977:0;sudo mv La\ ragazza\ nella\ nebbia\ \(2017\).H264.ita.sub.NUita.eng-MIRCrew /run/media/brajevicm/C2206EEB206EE63F/Users/milos/Downloads
+: 1524934059:0;cd /run/media/brajevicm/C2206EEB206EE63F/
+: 1524934070:0;sudo chmod -R -V 777 *
+: 1524934076:0;sudo chmod -R -v 777 *
+: 1525007689:0;pacaur -Syu
+: 1525000535:0;neofetch
+: 1525000538:0;screenfetch
+: 1525072432:0;pacaur -Syu
+: 1525077817:0;cd Development
+: 1525077846:0;git clone git@github.com:marsicdev/bit.git
+: 1525077893:0;cd bit
+: 1525077895:0;code .
+: 1525078162:0;firefox-developer-edition index.html
+: 1525078592:0;node "/home/brajevicm/Development/bit/week3/day2/practicals-5/arrays_01.js"
+: 1525078771:0;node "/home/brajevicm/Development/bit/week3/day2/practicals-5/arrays_04.js"
+: 1525079095:0;node "/home/brajevicm/Development/bit/week3/day2/practicals-5/loops_05.js"
+: 1525079131:0;node "/home/brajevicm/Development/bit/week3/day2/practicals-5/loops_06.js"
+: 1525081194:0;pacaur -Syu
+: 1525081198:0;cava
+: 1525081208:0;bash-pipes
+: 1525091434:0;mnt /mnt /dev/sda1
+: 1525091467:0;tmux
+: 1525091472:0;sudo pacman -Syu mnt
+: 1525091533:0;exit()\
+exit
+: 1525091548:0;mnt /dev/sda1 /mnt
+: 1525157980:0;pacaur -Syu
+: 1525158051:0;shutdown -r now
+: 1525246910:0;pacaur -Syu
+: 1525247169:0;node "/home/brajevicm/Development/playground/js/func_hoist.js"
+: 1525247174:0;node "/home/brajevicm/Development/playground/js/tempCodeRunnerFile.js"
+: 1525247176:0;node "/home/brajevicm/Development/playground/js/func_hoist.js"
+: 1525247223:0;node "/home/brajevicm/Development/playground/js/tempCodeRunnerFile.js"
+: 1525250267:0;node "/home/brajevicm/Development/playground/js/func_hoist.js"
+: 1525250645:0;node "/home/brajevicm/Development/playground/js/tempCodeRunnerFile.js"
+: 1525250668:0;node "/home/brajevicm/Development/playground/js/func_hoist.js"
+: 1525250671:0;node "/home/brajevicm/Development/playground/js/tempCodeRunnerFile.js"
+: 1525250673:0;node "/home/brajevicm/Development/playground/js/func_hoist.js"
+: 1525251321:0;node "/home/brajevicm/Development/playground/js/tempCodeRunnerFile.js"
+: 1525264547:0;pacaur -Syu
+: 1525433495:0;node "/home/brajevicm/Development/playground/js/mindfuck.js"
+: 1525433835:0;neofetch
+: 1525433838:0;screenfetch
+: 1525532079:0;neofetch
+: 1525532089:0;screen
+: 1525532091:0;screenfetch
+: 1525532104:0;pacaur -Syu
+: 1526644234:0;\
+gpg --recv-keys --keyserver hkp://pgp.mit.edu 1EB2638FF56C0C53
+: 1526644312:0;pacaur -Syu
+: 1526645590:0;sudo rm /usr/lib/libmozjs-52.so.0
+: 1526645596:0;pacaur -Syu
+: 1526645910:0;neofetch
+: 1526645915:0;screenfetch
+: 1526741722:0;pacaur -Syu
+: 1528835774:0;pacaur -S grub-customizerr
+: 1528835776:0;pacaur -S grub-customizer
+: 1528835859:0;pacaur -Syu
+: 1528835882:0;pacaur -S grub-customizer
+: 1528837204:0;pacaur -Syu
+: 1529451715:0;sudo pacman -Syu
+: 1529610864:0;pacaur -Syu
+: 1529604103:0;pacaur -S gparted
+: 1529604131:0;pacaur -Syu
+: 1529604137:0;pacaur -S gparted
+: 1529604677:0;postman
+: 1529604716:0;pacaur -R postman
+: 1529604725:0;pacaur -Syu postman
+: 1529604860:0;postman
+: 1529611530:0;[200~arecord -l~
+: 1529611543:0;arecord
+: 1529611548:0;arecord -l
+: 1529611589:0;subl /etc/pulse/default.pa
+: 1529611638:0;pulseaudio -k ; pulseaudio -D
+: 1529611644:0;pulseaudio -k && pulseaudio -D
+: 1529611687:0;arecord -l
+: 1529611715:0;pulseaudio -k && pulseaudio -D
+: 1529611719:0;pulseaudio -k
+: 1529611724:0;pulseaudio -D
+: 1529611807:0;alsamixer
+: 1529612060:0;[200~alsamixer -c 0~
+: 1529612069:0;alsamixer -c 0
+: 1529612139:0;alsamixer
+: 1529657770:0;cd Development
+: 1529657771:0;ls
+: 1529657808:0;git clone git@github.com:brajevicm/AlgoCasts.git
+: 1529657821:0;cd AlgoCasts/exercises/fib
+: 1529657829:0;subl index.js
+: 1529657877:0;git status
+: 1529657880:0;git add .
+: 1529657885:0;git commit -m "Changes"
+: 1529657889:0;git push origin master
+: 1529657893:0;git pull
+: 1529657901:0;git add .
+: 1529657903:0;git commit -m "Changes"
+: 1529657907:0;git push origin master
+: 1529657949:0;node "/home/brajevicm/Development/playground/js/hanoi.js"
+: 1530179601:0;pacaur -Syu
+: 1530179803:0;pacaur -Rd
+: 1530179809:0;pacman -Rd
+: 1530179813:0;sudo pacman -Rd
+: 1530179856:0;pacaur -Rns $(pacman -Qtdq)
+: 1530179880:0;cd Development
+: 1530179881:0;ls
+: 1530179884:0;cd PROJECT
+: 1530179884:0;ls
+: 1530179888:0;cd ..
+: 1530179892:0;rm -rf PROJECT
+: 1530179932:0;git clone git@bitbucket.org:neurologicstudents-server/speeder.git
+: 1530179948:0;cd speeder
+: 1530179983:0;pacman -Q | grep toolbox
+: 1530179991:0;pacman -Q | grep java
+: 1530179996:0;pacman -Q | grep "jdk"
+: 1530180021:0;pacaur -Syu jetbrains-toolbox
+: 1530304805:0;pacaur -Syu
+: 1530304859:0;cd Development
+: 1530304859:0;ls
+: 1530304861:0;cd speeder
+: 1530304864:0;git pull
+: 1530304874:0;ls
+: 1530304881:0;git clean -fd
+: 1530304895:0;pacman -Q | grep "php"
+: 1530308641:0;neofetch
+: 1530308918:0;git status
+: 1530308944:0;git add . && git commit -m "Formatted imports." && git push
+: 1530309074:0;neofetch
+: 1530309088:0;screenfetch
+: 1530309091:0;neofetch
+: 1530315825:0;alsamixer
+: 1530315946:0;pavucontrol
+: 1530365354:0;pacaur -Q | grep "php"
+: 1530365357:0;pacaur -Q | grep "composer"
+: 1530365519:0;pacaur -Syu  xf86-video-intel
+: 1530366058:0;composer require phpstan/phpstan
+: 1530366089:0;composer require deployer/deployer
+: 1530366109:0;composer require squizlabs/php_codesniffer
+: 1530366117:0;friendsofphp/php-cs-fixer
+: 1530366124:0;composer require friendsofphp/php-cs-fixer
+: 1530366146:0;composer require phpunit/phpunit
+: 1530366257:0;composer require phpunit/phpunit-mock-objects
+: 1530366658:0;composer require phpstan/phpstan
+: 1530366686:0;php --ini
+: 1530367178:0;composer require phpstan/phpstan
+: 1530367247:0;composer require --dev phpstan/phpstan
+: 1530367309:0;composer require nette/di
+: 1530367330:0;composer require nette/neon
+: 1530367390:0;subl /usr/share/php-composer/php.ini
+: 1530367468:0;subl /etc/php/php.ini 
+: 1530367535:0;composer require phpstan/phpstan
+: 1530367598:0;composer require phpunit/phpunit-mock-objects
+: 1530367660:0;composer
+: 1530367686:0;composer show
+: 1530367708:0;git log
+: 1530367711:0;git status
+: 1530367715:0;git add .
+: 1530367726:0;git commit -m "Added memoization to hanoi tower."
+: 1530367728:0;git push
+: 1530367904:0;phpstan
+: 1530368141:0;composer require phpstan/phpstan
+: 1530368396:0;ls vendor/bin/phpstan
+: 1530368551:0;ls /vendor/bin/phpstan
+: 1530369173:0;cd Development
+: 1530369173:0;ls
+: 1530369182:0;mkdir php-blog
+: 1530369184:0;cd p
+: 1530369189:0;	cd php-blog
+: 1530369191:0;git init
+: 1530369194:0;code .
+: 1530369274:0;composer global require "squizlabs/php_codesniffer=*"
+: 1530369361:0;ls vendor/bin
+: 1530369363:0;ls
+: 1530369674:0;composer
+: 1530369683:0;composer exec
+: 1530369688:0;composer exec phpcs
+: 1530369823:0;composer global require squizlabs/php_codesniffer
+: 1530369890:0;composer global require friendsofphp/php-cs-fixer
+: 1530369941:0;composer global require phpstan/phpstan
+: 1530369955:0;composer global require deployer/deployer
+: 1530369963:0;composer global require squizlabs/php_codesniffer
+: 1530369971:0;composer global require friendsofphp/php-cs-fixer
+: 1530369984:0;composer global require phpunit/phpunit
+: 1530369996:0;yarn add global prettier
+: 1530370003:0;yarn add global @prettier/plugin-php
+: 1530370231:0;pacaur -Q | grep "apache"
+: 1530370234:0;pacaur -Q | grep "nginx"
+: 1530370443:0;cd .config/composer
+: 1530370444:0;ls
+: 1530370453:0;cat composer.
+: 1530370458:0;cat composer.json
+: 1530370470:0;PATH="$HOME/.config/composer/vendor/bin:$PATH"\
+
+: 1530370472:0;cat composer.json
+: 1530370478:0;composer global require phpunit/phpunit
+: 1530370493:0;composer global require friendsofphp/php-cs-fixer
+: 1530370505:0;composer global require phpstan/phpstan
+: 1530370518:0;composer global require deployer/deployer
+: 1530370535:0;composer global require squizlabs/php_codesniffer
+: 1530370604:0;cd .config/composer/vendor
+: 1530370604:0;ls
+: 1530370606:0;cd bin
+: 1530370607:0;ls
+: 1530370623:0;phpstan
+: 1530370632:0;[200~~/.config/composer/vendor/bin/phpstan~
+: 1530370635:0;~/.config/composer/vendor/bin/phpstan
+: 1530370644:0;cd ..
+: 1530370645:0;ls
+: 1530370762:0;pacaur -Syu  php-sqlite
+: 1530370774:0;/etc/php/php.ini
+: 1530370778:0;sudo subl /etc/php/php.ini
+: 1530370845:0;subl
+: 1530370996:0;composer require friendsofphp/php-cs-fixer
+: 1530371017:0;subl .config/composer/composer.json
+: 1530372192:0;which phpcs
+: 1530372410:0;echo $path
+: 1530372436:0;subl
+: 1530372456:0;which phpcs
+: 1530372559:0;phpcs
+: 1530372576:0;phpstan
+: 1530372579:0;which phpstan
+: 1530372631:0;phpstan
+: 1530372730:0;pacaur -Syu
+: 1530372768:0;pacman -Qdt
+: 1530372913:0;git status
+: 1530372915:0;git add .
+: 1530388619:0;pacaur -Syu
+: 1530390521:0;subl
+: 1530390648:0;pacaur -Syu plasma5-applets-eventcalendar
+: 1530391604:0;pacaur -yu flat-remix-git
+: 1530392235:0;ls
+: 1530392236:0;cd Android
+: 1530392237:0;ls
+: 1530392238:0;cd /
+: 1530392245:0;cd ~/Downloads/ls
+: 1530392246:0;cd ~/Downloads/
+: 1530392249:0;ls
+: 1530392290:0;slack
+: 1530392295:0;which slack
+: 1530392978:0;ps -A
+: 1530393009:0;ps -A | grep "intel"
+: 1530393012:0;ps -A | grep "jet"
+: 1530393025:0;kill 9314
+: 1530393035:0;kill 9318
+: 1530393038:0;ps -A | grep "jet"
+: 1530393101:0;pstorm
+: 1530393748:0;git status
+: 1530393750:0;git pull
+: 1530393756:0;git clean -fd
+: 1530394072:0;which mesa
+: 1530394080:0;pacaur -Syu mesa
+: 1530394142:0;pacaur -Syu lib32-mesa
+: 1530394195:0;pacaur -Syu xf86-video-intel
+: 1530394445:0;pacaur -Syu ntfs-3g
+: 1530394719:0;pacaur -Syu alacritty-scrollback-git
+: 1530395159:0;pacaur -Qd
+: 1530395161:0;pacaur -Qdm
+: 1530395175:0;ls
+: 1530395176:0;cd
+: 1530395189:0;ls
+: 1530395197:0;pacaur -Qdm
+: 1530395199:0;pacaur -Q
+: 1530395210:0;man alacritty
+: 1530395230:0;man alacritty --config-file
+: 1530395251:0;cd .config
+: 1530395251:0;ls
+: 1530395259:0;ls | grep "al"
+: 1530395262:0;cd alacritty
+: 1530395263:0;ls
+: 1530395269:0;subl alacritty.yml
+: 1530395313:0;man alacritty
+: 1530395322:0;man alacritty --live-config-reloaded
+: 1530395326:0;man alacritty --live-config-reload
+: 1530395331:0;alacritty --live-config-reload
+: 1530395745:0;ls
+: 1530395827:0;asdsadls
+: 1530395828:0;ls
+: 1530397219:0;pacaur -Qdm
+: 1530397225:0;pacaur -Syu kitty
+: 1530397389:0;pacaur -Syu termite
+: 1530397402:0;pacaur -Syu termite-git
+: 1530397513:0;pacaur -Syu termite
+: 1530397540:0;pacaur -Syu termite-git
+: 1530397548:0;pacaur -Syu termite
+: 1530397610:0;man termite
+: 1530397632:0;ls
+: 1530397806:0;cd .config
+: 1530397815:0;ls | grep "term"
+: 1530397828:0;mkdir termite
+: 1530397830:0;cd termite
+: 1530397854:0;touch config
+: 1530397857:0;subl config
+: 1530397871:0;ls
+: 1530397884:0;cd Development/speeder
+: 1530397885:0;ls
+: 1530398047:0;cd Development
+: 1530398708:0;pacaur -Syu  zsh-syntax-highlighting
+: 1530398760:0;pacaur -Q | grep "zsh"
+: 1530398818:0;cd Desktop
+: 1530398853:0;csad
+: 1530398856:0;case
+: 1530398924:0;cd /usr/share/zsh/plugins
+: 1530398924:0;ls
+: 1530398934:0;cd zsh-autosuggestions
+: 1530398940:0;cd ../zsh-syntax-highlighting
+: 1530398941:0;ls
+: 1530398966:0;sad
+: 1530398970:0;cas
+: 1530398986:0;neofetch
+: 1530399011:0;pipes
+: 1530399018:0;tmux
+: 1530399023:0;quit
+: 1530399031:0;exit()\
+exit
+: 1530399048:0;neofetch
+: 1530399059:0;screenfetch
+: 1530399132:0;sensors
+: 1530399174:0;sensors | grep fan
+: 1530399240:0;pacaur -Syu thinkfan
+: 1530399290:0;pacaur -Syu lm_sensors
+: 1530399339:0;echo "options thinkpad_acpi fan_control=1" > /etc/modprobe.d/thinkfan.conf
+: 1530399342:0;sudo echo "options thinkpad_acpi fan_control=1" > /etc/modprobe.d/thinkfan.conf
+: 1530399356:0;echo "options thinkpad_acpi fan_control=1" > sudo /etc/modprobe.d/thinkfan.conf
+: 1530399360:0;sudo echo "options thinkpad_acpi fan_control=1" > sudo /etc/modprobe.d/thinkfan.conf
+: 1530399366:0;su
+: 1530399658:0;ls
+: 1530399689:0;pacman -Ql thinkfan
+: 1530399745:0;cat /usr/lib/modprobe.d/thinkpad_acpi.conf
+: 1530399784:0;systemctl enable thinkfan
+: 1530399820:0;thinkfan -n
+: 1530399873:0;neofetch
+: 1530399885:0;screenfetch
+: 1530399919:0;cd /etc/
+: 1530399924:0;sudo touch thinkfan.conf
+: 1530399930:0;subl thinkfan.conf
+: 1530399942:0;thinkfan -n
+: 1530400070:0;sudo sh -c 'echo coretemp >> /etc/modules'
+: 1530400081:0;sudo modprobe coretemp
+: 1530400160:0;touch /etc/modprobe.d/thinkfan.conf
+: 1530400163:0;sudo touch /etc/modprobe.d/thinkfan.conf
+: 1530400171:0;sudo sh -c 'echo "options thinkpad_acpi fan_control=1" >> /etc/modprobe.d/thinkfan.conf'
+: 1530400178:0;sudo modprobe -r thinkpad_acpi
+: 1530400187:0;sudo modprobe thinkpad_acpi
+: 1530400202:0;sudo subl /etc/default/thinkfan
+: 1530400212:0;sudo /etc/init.d/thinkfan start
+: 1530400217:0;sudo thinkfan start
+: 1530400227:0;sudo cat /proc/acpi/ibm/fan
+: 1530400252:0;sensors
+: 1530400253:0;a
+: 1530400276:0;sensors | grep "fan"
+: 1530400287:0;sensors-detect
+: 1530400298:0;sudo sensors-detect
+: 1530400365:0;systemctl status thinkfan.service
+: 1530400383:0;systemctl enable thinkfan
+: 1530400395:0;systemctl start thinkfan
+: 1530400501:0;n
+: 1530400504:0;screenfetch
+: 1530400510:0;systemctl status thinkfan.service
+: 1530400608:0;pacaur -Syu spaceship-prompt-git
+: 1530400708:0;as
+: 1530400732:0;ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
+: 1530400783:0;pacaur -Q | grep "zsh"
+: 1530400790:0;pacaur -Q | grep "space"
+: 1530400800:0;pacaur -Rd spaceship-prompt-git
+: 1530400808:0;git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
+: 1530400813:0;sudo git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
+: 1530400831:0;thinkfan -n
+: 1530400844:0;sudo thinkfan -n
+: 1530400852:0;ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
+: 1530400855:0;sudo ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
+: 1530400870:0;ls
+: 1530400883:0;cd Development
+: 1530400887:0;cd speeder
+: 1530400889:0;cd ..
+: 1530400889:0;ls
+: 1530400891:0;cd bit
+: 1530400893:0;cd ..
+: 1530400895:0;cd php-blog
+: 1530401224:0;ranger
+: 1530401229:0;pacaur -Syu ranger
+: 1530401358:0;screenfetch
+: 1530401394:0;sensors | grep "fan"
+: 1530401404:0;screenfetch
+: 1530401498:0;subl .config/termite/config
+: 1530401640:0;ls
+: 1530401661:0;sudo systemctl status thinkfan.service
+: 1530401731:0;sudo su
+: 1530401890:0;find /sys/devices -type f -name "temp*_input"\
+
+: 1530401970:0;sudo sed -i 's|START=no|START=yes|' /etc/default/thinkfan
+: 1530401981:0;sudo sed -i 's|DAEMON_ARGS="-q"|DAEMON_ARGS="-q -b 1 -s 15"|' /etc/default/thinkfan
+: 1530402000:0;sudo systemctl enable thinkfan
+: 1530402003:0;exit
+: 1530402009:0;systemctl enable thinkfan
+: 1530402170:0;exitrsystemctl status thinkfan.service
+: 1530402175:0;systemctl status thinkfan.service
+: 1530402204:0;sudo subl
+: 1530402217:0;subl /etc/thinkfan.conf
+: 1530402228:0;find /sys/devices -type f -name "temp*_input"
+: 1530402270:0;systemctl enable thinkfan
+: 1530402281:0;systemctl start thinkfan
+: 1530402288:0;systemctl status thinkfan.service
+: 1530402342:0;screenfetch
+: 1530402354:0;sensors
+: 1530402366:0;screenfetch
+: 1530402429:0;systemctl status thinkfan.service
+: 1530402438:0;screenfetch
+: 1530402553:0;subl /etc/lsb-release
+: 1530402827:0;pacaur -Syu lsb-release
+: 1530402838:0;neofetch
+: 1530402972:0;subl /etc/os-release
+: 1530403025:0;neofetch
+: 1530403064:0;screenfetch
+: 1530403170:0;neofetch
+: 1530403203:0;systemctl status thinkfan.service
+: 1530403252:0;systemctl start thinkfan.service
+: 1530403256:0;systemctl status thinkfan.service
+: 1530403293:0;ls
+: 1530403407:0;screenfetch
+: 1530403410:0;nanofet
+: 1530403413:0;neofetch
+: 1530403494:0;nanofet
+: 1530403496:0;neofetch
+: 1530403498:0;screenfetch
+: 1530403516:0;sudo pacaur -Syu
+: 1530403549:0;pacaur -Syu
+: 1530403596:0;pacaur -Rd screenfetch
+: 1530403619:0;cd ~/.config/neofetch
+: 1530403620:0;ls
+: 1530403622:0;subl config.conf
+: 1530403692:0;neofetch
+: 1530403951:0;systemctl status thinkfan.service
+: 1530403955:0;neofetch
+: 1530404105:0;sudo subl
+: 1530404182:0;neofetch
+: 1530404184:0;cava
+: 1530404190:0;ls
+: 1530404193:0;cava
+: 1530404199:0;ls
+: 1530404202:0;pipes
+: 1530404212:0;vim
+: 1530404879:0;glxinfo | grep -i opengl
+: 1530404903:0;pacaur -Syu glxinfo
+: 1530404941:0;pacaur -Qdm
+: 1530404966:0;pacaur -Qdy
+: 1530404970:0;pacaur -Qdt
+: 1530405019:0;pacaur -Rs glew
+: 1530405029:0;pacaur -Rs extra-cmake-modules
+: 1530405041:0;glxinfo | grep -i opengl
+: 1530405157:0;mkdir .compose-cache
+: 1530405306:0;neofetch
+: 1530405679:0;ls
+: 1530405684:0;composer global require phpunit/phpunit
+: 1530405699:0;composer global require phpunit/dbunit
+: 1530405701:0;ls
+: 1530405711:0;ls | grep "composer"
+: 1530405720:0;composer global require phing/phing
+: 1530405730:0;composer global require phpdocumentor/phpdocument
+: 1530405735:0;composer global require phpdocumentor/phpdocumentor
+: 1530405762:0;composer global require sebastian/phpcpd
+: 1530405774:0;composer global require phploc/phploc
+: 1530405782:0;composer global require phpmd/phpmd
+: 1530405798:0;composer global require squizlabs/php_codesniffer
+: 1530405842:0;composer global require phpstan/phpstan
+: 1530405861:0;composer global require "squizlabs/php_codesniffer=*"
+: 1530405892:0;neofetch
+: 1530405950:0;ls
+: 1530405957:0;neofetch
+: 1530406371:0;ls
+: 1530406376:0;rm yarn.lock
+: 1530406377:0;l
+: 1530406378:0;ls
+: 1530406386:0;cd ~/
+: 1530406388:0;ls
+: 1530406395:0;rm -rf node_modules
+: 1530406401:0;cd vendor
+: 1530406402:0;ls
+: 1530406403:0;cd ..
+: 1530406407:0;rm -rf vendor
+: 1530406408:0;ls
+: 1530406416:0;php-config
+: 1530406420:0;php-cs-fixer
+: 1530406596:0;neofetch
+: 1530406694:0;pacaur -Syu kmenuedit
+: 1530406705:0;kmenuedit
+: 1530407371:0;cd Downloads
+: 1530407372:0;ls
+: 1530407374:0;cd Breeze-GRUB2
+: 1530407375:0;ls
+: 1530407379:0;./install.sh
+: 1530407392:0;cd ../blur-grub2_hd
+: 1530407396:0;./install.sh
+: 1530407446:0;./install.sh-
+: 1530407449:0;sudo ./install.sh
+: 1530407457:0;cd ../Breeze-GRUB2
+: 1530407460:0;sudo ./install.sh
+: 1530407520:0;cd Downloads
+: 1530407521:0;ls
+: 1530407523:0;rm -rf
+: 1530407525:0;ls
+: 1530407554:0;rm *
+: 1530407561:0;rm -rf *
+: 1530407563:0;ls
+: 1530407708:0;neofetch
+: 1530407729:0;pipes
+: 1530407854:0;phpstan analyze
+: 1530407862:0;cd ..
+: 1530407867:0;phpstan analyze php-blog
+: 1530407917:0;which php
+: 1530407950:0;phpstan analyze php-blog
+: 1530408115:0;kmenuedit
+: 1530408431:0;vim
+: 1530408972:0;pacaur -Syu libreoffice-fresh
+: 1530409054:0;pacaur -Syu hunspell-en
+: 1530409062:0;pacaur -Syu hunspell-rs
+: 1530409074:0;pacaur -Syu hunspell-sr
+: 1530409362:0;pacaur -Syu wps-office
+: 1530409713:0;neofetch
+: 1530409752:0;pacaur -Rs wps-office
+: 1530410072:0;neofetch
+: 1530410146:0;alsamixer
+: 1530410224:0;neofetch
+: 1530439603:0;pacaur -Syu
+: 1530439623:0;pacaur -Qdt
+: 1530439646:0;pacaur -Rs php-box rust
+: 1530439654:0;pacaur -Syu
+: 1530439785:0;pacaur -Rs xenlism-wildfire
+: 1530439880:0;pacaur -Rs pcmciautils
+: 1530439906:0;pacaur -Syu
+: 1530440027:0;pacman -Syy
+: 1530440031:0;sudo pacman -Syy
+: 1530440046:0;man pacman
+: 1530440086:0;pacman -Rd xenlism-arch
+: 1530440089:0;sudo pacman -Rd xenlism-arch
+: 1530440094:0;sudo pacman -Dd xenlism-arch
+: 1530440101:0;man pacman
+: 1530445866:0;cd Development
+: 1530445871:0;git clone git@github.com:JetBrains/swot.git
+: 1530445879:0;cd swot
+: 1530445881:0;ls
+: 1530445894:0;cd lib/domains/rs/ac
+: 1530445894:0;ls
+: 1530445899:0;cat eu.txt
+: 1530445903:0;cat uns.txt
+: 1530445911:0;touch met.txt
+: 1530445930:0;echo Metropolitan University >> met.txt
+: 1530445934:0;cat met.txt
+: 1530445938:0;git status
+: 1530445945:0;git add .
+: 1530446213:0;git checkout -b "Add Metropolitan University"
+: 1530446223:0;ls
+: 1530446240:0;git commit -m "Add Metropolitan University"
+: 1530446298:0;ls
+: 1530446313:0;cd ..
+: 1530446320:0;cd ../../..
+: 1530446323:0;cd ..
+: 1530446325:0;rm -rf swot
+: 1530446330:0;git clone git@github.com:JetBrains/swot.git
+: 1530446356:0;cd swot
+: 1530446534:0;cd ..
+: 1530446537:0;rm -rf swot
+: 1530446540:0;git clone git@github.com:brajevicm/swot.git
+: 1530446551:0;cd swot
+: 1530446558:0;cd lib/domains/rs/ac
+: 1530446581:0;touch met.txt && echo >> "Metropolitan University" met.txt
+: 1530446582:0;ls
+: 1530446593:0;rm Metropolitan\ University
+: 1530446594:0;ls
+: 1530446598:0;cat met.txt
+: 1530446616:0;echo >> "Metropolitan University" met.txt
+: 1530446617:0;ls
+: 1530446622:0;rm Metropolitan\ University
+: 1530446624:0;ls
+: 1530446657:0;echo Metropolitan University >> met.txt
+: 1530446658:0;ls
+: 1530446661:0;cat met.txt
+: 1530446664:0;git status
+: 1530446667:0;git add .
+: 1530446694:0;git checkout -b add-met-university
+: 1530446698:0;git status
+: 1530446702:0;git add .
+: 1530446728:0;git commit"
+: 1530446729:0;git commit
+: 1530446764:0;git status
+: 1530446772:0;git commit -m "Add Metropolitan University"
+: 1530446787:0;git push -u origin add-met-university
+: 1530446886:0;ls
+: 1530446899:0;mv met.txt metropolitan.txt
+: 1530446900:0;ls
+: 1530446902:0;git status
+: 1530446905:0;git add .
+: 1530446930:0;git checkout master
+: 1530446932:0;git status
+: 1530446934:0;git clean -fd
+: 1530446936:0;ls
+: 1530446937:0;git status
+: 1530446943:0;git reset HEAD --hard
+: 1530446946:0;git status
+: 1530446948:0;ls
+: 1530446961:0;git checkout add-met-uni
+: 1530446965:0;git checkout -b add-met-uni
+: 1530446984:0;echo Metropolitan University >> metropolitan.txt
+: 1530446987:0;ls
+: 1530446989:0;git status
+: 1530447011:0;mv metropolitan.txt metropolitan.txt
+: 1530447015:0;git add .
+: 1530447023:0;git commit -m "Add Metropolitan University"
+: 1530447028:0;git push -u origin add-met-uni
+: 1530447135:0;neofetch
+: 1530447788:0;pacaur -Syu sysbench
+: 1530447897:0;sysbench --test=cpu run
+: 1530447934:0;sysbench --test=cpu run -num-threads=4
+: 1530447941:0;sysbench --test=cpu --num-threads=4 run
+: 1530447962:0;pacaur -Rs sysbench
+: 1530450985:0;kmenuedit
+: 1530464653:0;pacaur -Syu
+: 1530465969:0;cd Development/speeder
+: 1530466011:0;ls
+: 1530466016:0;cd speeder-data-jpa
+: 1530466017:0;ls
+: 1530466021:0;cd src/test
+: 1530466021:0;ls
+: 1530466097:0;mvn test java
+: 1530466107:0;pacaur -Syu maven
+: 1530466146:0;maven test java
+: 1530466305:0;cd ~/Development/speeder
+: 1530466311:0;mvn clean install
+: 1530466364:0;mvn spring-boot:run
+: 1530466498:0;ls
+: 1530466502:0;mvn clean install
+: 1530466592:0;mvn clean package
+: 1530466743:0;mvn clean install
+: 1530466777:0;git status
+: 1530466828:0;git status 
+: 1530466901:0;git add .
+: 1530466938:0;git reset HEAD --hard
+: 1530466943:0;git clean -fd
+: 1530467008:0;git status
+: 1530467009:0;git add .
+: 1530467028:0;git commit -m "Added lombok to maven build path."
+: 1530467030:0;git push
+: 1530467035:0;mvn clean install
+: 1530467065:0;mvn spring-boot:run
+: 1530467089:0;cd speeder-start/src/main/java/org/mateja/speeder/start
+: 1530467089:0;ls
+: 1530467095:0;mvn spring-boot:run
+: 1530467309:0;neofetch
+: 1530474722:0;git checkout -b factory-mapper
+: 1530476257:0;git reset HEAD --hard
+: 1530476261:0;git clean -fd
+: 1530477462:0;git reset HEAD --hard
+: 1530477470:0;git status
+: 1530522355:0;neofetch
+: 1530522989:0;git chechkout master
+: 1530522995:0;git checkout master
+: 1530522997:0;git status
+: 1530523023:0;git checkout -b controller-refactor
+: 1530523328:0;neofetch
+: 1530523331:0;pacaur -Syu
+: 1530523929:0;git checkout master
+: 1530523935:0;git checkout -b rest-exercise
+: 1530526588:0;git checkout master
+: 1530526599:0;git checkout -b feature-game
+: 1530526793:0;neofetch
+: 1530527070:0;cd Development
+: 1530527070:0;ls
+: 1530527101:0;git clone git clone git@bitbucket.org:brajevicm/speedr-memory-game.git
+: 1530527106:0;git clone git@bitbucket.org:brajevicm/speedr-memory-game.git
+: 1530527130:0;git clone git@bitbucket.org:brajevicm/speedr-dot-and-numbers.git
+: 1530527150:0;git clone git@bitbucket.org:brajevicm/speedr-schultz-game.git
+: 1530527164:0;git clone git@bitbucket.org:brajevicm/speedr-raws-game.git
+: 1530527176:0;git clone git@bitbucket.org:brajevicm/speedr-card-game.git
+: 1530527189:0;ls
+: 1530527198:0;cd speedr-schultz-game
+: 1530527199:0;ls
+: 1530527210:0;cd src/reducers
+: 1530527212:0;cat game.js
+: 1530532180:0;yarn
+: 1530532218:0;yarn install
+: 1530532236:0;yarn run dev-server
+: 1530532588:0;yarn install
+: 1530533684:0;cd Development/speedr-dot-and-numbers
+: 1530533690:0;cd src/reducers
+: 1530533696:0;ls
+: 1530533698:0;cat game.js
+: 1530533822:0;cd ../actions
+: 1530533823:0;ls
+: 1530533825:0;cat game.js
+: 1530534022:0;git status
+: 1530534092:0;git add .
+: 1530534189:0;git commit -m "Added base and concrete game domains. Improved entity package structure."
+: 1530534197:0;git push -u origin feature-game
+: 1530534465:0;git add .
+: 1530534471:0;git commit -m "Added raws game."
+: 1530534679:0;git status
+: 1530534681:0;git add .
+: 1530534704:0;git commit -m "Changed constructor of GameDomain to public."
+: 1530534707:0;git push
+: 1530534718:0;pacaur -Syu
+: 1530542062:0;neofetch
+: 1530542168:0;ranger
+: 1530542650:0;git clone git@github.com:brajevicm/dotfiles.git
+: 1530542655:0;git status
+: 1530543401:0;pacaur -Syu dotfles
+: 1530543403:0;pacaur -Syu dotfiles
+: 1530543680:0;echo pacaur -Q >> packages.txt
+: 1530543685:0;cat packages.txt
+: 1530543725:0;echo pacaur -Q > packages.txt
+: 1530543728:0;cat packages.txt
+: 1530543743:0;pacaur -Q > packages.txt
+: 1530543745:0;cat packages.txt
+: 1530543867:0;cd dotfiles
+: 1530543868:0;ls
+: 1530543881:0;git add vimrc
+: 1530543897:0;cd ..
+: 1530543905:0;cd dotfiles
+: 1530543909:0;dotfiles --sync
+: 1530543922:0;cd ..
+: 1530543928:0;mv dotfiles Dotfiles
+: 1530543967:0;cd Dotfiles
+: 1530543972:0;dotfiles --sync
+: 1530543984:0;cd ..
+: 1530543985:0;ls -a
+: 1530543990:0;ls -ll
+: 1530543994:0;ls -all
+: 1530544023:0;Dotfiles --ad .zsh_history .zshrc
+: 1530544030:0;dotfiles --add .zsh_history .zshrc
+: 1530544043:0;cd Dotfiles
+: 1530544044:0;ls
+: 1530544046:0;cd ..
+: 1530544066:0;cd Dotfiles
+: 1530544071:0;git status
+: 1530544073:0;git add .
